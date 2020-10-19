@@ -77,6 +77,11 @@ li a:hover {
 
 /* Keep home in foucs when we are in its sub-menu*/
 /* write logic for above */
+.main ul li:hover a {
+    background-color: white;
+    color: red;
+    clear: both;
+}
 
 
 
