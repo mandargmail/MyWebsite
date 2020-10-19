@@ -4,12 +4,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Agency FB';
 }
 
 /* Style for the header */
-header {
+body{
     /* Select background image */
     background-image: url(../background.jpg);
 
@@ -24,14 +23,14 @@ header {
 
 .main ul{
     display: block;
-    list-style-type: none;
+    list-style: none;
     float: right;
     margin-top: 25px;
     margin-right: 25px;
 }
 
 /* Style for the list*/
-.main ul li{
+.main ul li {
     float: left;
     padding: 5px 10px; /* Vertical Horizontal*/
 }
@@ -54,17 +53,68 @@ header {
     color: red;
     font-size: 25px;
     text-decoration: underline;
+    clear: both;
 }
 
-/* Set image norms*/
-.logo img {
-    float: left;
-    width: 200px;
-    height: auto;
-    padding: 40px 40px;
+
+
+
+/*
+@keyframes move {
+    0% {margin-left: 0px; margin-right: 0px;}
+    50% {margin-left: -2.5px; margin-right: -2.5px; color:#53cbf1;}
+    100% {margin-left: 0px; margin-right: 0px;}
+}
+li a:hover {
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+*/
+
+
+
+
+/* Keep home in foucs when we are in its sub-menu*/
+/* write logic for above */
+
+
+
+
+/* To not display the sub menus by default*/
+.main ul li ul {
+    display: none;
 }
 
-.title{
+/* To reset the list style so that sub menu doesn't come Horizontally*/
+.main ul li ul li{
+    clear: both;
+}
+
+.main ul li:hover ul {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.main ul li:hover ul li a{
+    color: black;
+}
+
+.main ul li:hover ul li a:hover{
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+
+
+.title {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -74,7 +124,7 @@ header {
     font-style: italic;
 }
 
-.button ul{
+.button ul {
     position: absolute;
     list-style-type: none;
     top: 50%;
@@ -83,19 +133,19 @@ header {
     font-size: 30px;
 }
 
-.button ul li{
+.button ul li {
     float: left;
     padding: 5px 10px; /* Vertical Horizontal*/
 }
 
-.button ul li a{
+.button ul li a {
     border: 1px solid transparent;
     color: #fff;
-    text-decoration: underline;
     transition: all 0.5s ease;
+    text-decoration: none;
 }
 
-.button ul li a:hover{
+.button ul li a:hover {
     background-color: forestgreen;
     color: #fff;
     font-size: 35px;
@@ -103,43 +153,18 @@ header {
     text-decoration: underline;
 }
 
+
+
+
+/* Set image norms*/
+.logo img {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 40px 40px;
+}
+
 /* Add spacing between icon and name */
-.main .fa{
+.main .fa {
     margin-right: 5px;
 }
-
-.contact{
-    display: none;
-}
-
-/*
-.main ul li:hover .contact{
-    display: block;
-    position: absolute;
-    background-color: black;
-    margin-top: 15px;
-    margin-left: 115px;
-    font-size: 20px;
-}
-
-.main ul li a:hover .contact ul{
-    display: block;
-    margin: 10px;
-}
-
-.main ul li a:hover .contact ul li a{
-    border: 1px solid transparent;
-    color: #fff;
-    text-decoration: underline;
-    transition: all 0.5s ease;
-}
-
-
-.main ul li a:hover .contact ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px #fff;
-    background: transparent;
-    border-radius: 0;
-}
-*/
