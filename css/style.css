@@ -8,7 +8,7 @@
 }
 
 /* Style for the header */
-body{
+body {
     /* Select background image */
     background-image: url(../background.jpg);
 
@@ -21,7 +21,7 @@ body{
     background-position: center;
 }
 
-.main ul{
+.main ul {
     display: block;
     list-style: none;
     float: right;
@@ -37,7 +37,7 @@ body{
 
 
 /* Style for each of the list*/
-.main ul li a{
+.main ul li a {
     border: 1px solid transparent;
     padding-left: 10px;
     padding-right: 10px;
@@ -87,7 +87,7 @@ li a:hover {
 }
 
 /* To reset the list style so that sub menu doesn't come Horizontally*/
-.main ul li ul li{
+.main ul li ul li {
     clear: both;
 }
 
@@ -100,11 +100,11 @@ li a:hover {
     font-size: 20px;
 }
 
-.main ul li:hover ul li a{
+.main ul li:hover ul li a {
     color: black;
 }
 
-.main ul li:hover ul li a:hover{
+.main ul li:hover ul li a:hover {
     background-color: white;
     color: red;
     font-size: 20px;
