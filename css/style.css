@@ -177,3 +177,57 @@ li a:hover {
 .main .fa {
     margin-right: 5px;
 }
+
+
+
+
+.about {
+    background-color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 101.8%;
+    width: 100%;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+
+
+
+.end {
+    background-color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 200%;
+    left: 0%;
+    width: 100%;
+    padding-left: 48%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Add Animation to Change Background Color Continuously*/
+.end {
+    -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */
+    animation: 4s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+    0% {background-color: white;}
+
+    33% {background-color: green;}
+
+    66% {background-color: yellow;}
+
+    100% {background-color: white;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgcolorchange {
+    0% {background: white;}
+
+    33% {background: green;}
+
+    66% {background: yellow;}
+
+    100% {background: blue;}
+}
