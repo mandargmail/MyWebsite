@@ -186,9 +186,9 @@ li a:hover {
     font-size: 25px;
     position: absolute;
     top: 101.8%;
-    width: 100%;
     padding: 50px;
     padding-left: 100px;
+    width: 92.1%;
 }
 
 
@@ -200,15 +200,15 @@ li a:hover {
     position: absolute;
     top: 200%;
     left: 0%;
-    width: 100%;
     padding-left: 48%;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 52%;
     font-weight: bold;
 }
 
 /* Add Animation to Change Background Color Continuously*/
-.end {
+    .end {
     -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */
     animation: 4s infinite bgcolorchange;
 }
