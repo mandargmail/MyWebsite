@@ -23,10 +23,7 @@ body {
     background-position: center;
 }
 
-@keyframes animate{
-    0%{filter: hue-rotate(0deg);}
-    100% {filter: hue-rotate(360deg);}
-}
+
 
 .main ul {
     display: block;
@@ -178,6 +175,7 @@ li a:hover {
     width: 200px;
     height: auto;
     padding: 40px 40px;
+    border-radius: 100px;
 }
 
 /* Add spacing between icon and name */
